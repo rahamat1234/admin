@@ -1,0 +1,252 @@
+
+
+
+
+body{
+    margin: 0; 
+     padding: 0;
+     font-family: Audiowide;
+     background-color: #fd4b60;
+      font-size: 16px;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+.headersection{
+     padding: 10px 0;
+      background-color: rgb(167, 141, 141);
+}
+
+
+.nav_bar{
+     display: block;
+      float: right;
+    }
+
+    .nav_list{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: -o-flex;
+        display: flex;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 60%;
+        left: 45%;
+        padding: 0;
+         margin: 0;
+         list-style: none;
+         
+    }
+    .nav_list li{
+         list-style: none;
+          display: inline-block;
+    }
+    .nav-2-a{
+        color: black;
+        font-style: oblique;
+    }
+
+    .nav_list li a{
+        color:black;                                                                                                                        
+        padding: 10px;
+     font-size: 16px;
+     text-align: center;
+     text-decoration: none;
+     text-transform: tt;
+     font-style: italic;
+     font-size: 125%;
+
+}
+.nav_list li a:hover{
+    color: #70d157;
+}
+.nav_list li a:before{
+    border-top: 1px solid #ffff;
+    border-bottom-color: #ffff;
+    transform: scale(2);
+    opacity: 0;
+    transition: .5s;
+    content: '';
+    position: absolute;
+    top: o;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+}
+.nav_list li a:hover:before{
+    transform: scaleY(1.2);
+    opacity: 1;
+
+}
+.nav_list li a:after{
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+    transform: scale(0);
+    transform: .5s;
+    z-index: index -1;
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    
+
+}
+
+.logo{
+    padding: 10px;
+    font-size: 30px;
+    font-style: italic;
+        
+}
+.logo a{
+    color: rgb(24, 20, 49);
+}
+.banner{
+   
+padding: 100px;
+    width: 100%;
+    
+    background-image: url(../assets/truck11.jpg);
+}
+
+.actical_section{
+    padding: 30px 0;
+    background:rgb(236, 238, 240);
+}
+.head_box_ban{
+     padding: 20px;
+
+     
+}
+
+
+.header_text{
+     text-align: center;
+      color: #000;
+       text-transform: capitalize;
+       margin-bottom: 20px;
+}
+
+
+.para_texts{
+    text-transform: capitalize;
+     text-align: center;
+     color: #666;
+}
+.image_1 h1{
+    color: rgb(61, 94, 90);
+}
+
+
+.images_section{
+    background-image: url(../assets/track.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    background-attachment: fixed;
+}
+.image_box{
+    display: flex;
+justify-content: center;
+
+
+}
+.image_1{
+    background-image: url(../assets/bua.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+     width: 100%;
+      height:350px;
+   flex: 1;
+  transform: 0.3s;
+
+}
+
+.images_2{
+    background-image: url(../assets/blog-1.jpg);
+}
+
+
+.images_3{
+    background-image: url(../assets/blog-2.jpg);
+}
+
+
+.image_1:hover{
+    flex: 2;
+
+}
+
+.bg_img{
+    background-image:url(../assets/blog-grid-4.jpg);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+     width: 100%;
+      height: 300px;
+       padding: 50px 0;
+   
+}
+
+
+ .user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    
+}
+
+
+.imBx img{
+     width: 100px;
+     padding: 10px;
+}
+
+
+.list{
+    display: block;
+    padding: 10px ;
+      background: #222327;
+      width: 350px;
+        background-color: rgb(255, 255, 255);   
+         margin: 0 auto;
+         border-radius: 5px;
+          margin-top: 20px ;
+           margin-bottom: 20px;
+
+}
+.list.user .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.navigation{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #ffff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.navigation.active{
+    width: 200px;
+}
+.nav_list img{
+    width: 30px;
+    padding: 0%;
+    margin: 0%;
+}
+

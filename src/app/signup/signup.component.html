@@ -1,0 +1,70 @@
+<div class="login_section">
+<div class="container">
+    <div class="login-page">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="tex-center">
+                    <img class="image img" src="./assets/user.jpg">
+                    <h4>Registration Form</h4>
+                </div>
+                <form [formGroup]="contactForm" class="form">
+                    
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">*Full Name</label>
+                            <input type="text" formControlName ="yourname" minlength="4" maxlength="100" placeholder="enter your full" [(ngModel)]="uname"  required class="form-control">
+                            <p>{{uname}}</p>
+                            
+                          
+                          </div>
+                        
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">*Email address</label>
+                          <input type="email" formControlName="email" minlength="5" maxlength="100" placeholder="enter your email" [(ngModel)]="email"  required class="form-control">
+                          <p>{{email}}</p>
+                          
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">*Mobile Number</label>
+                            <input type="tel" formControlName="mobile" minlength="10" maxlength="12" placeholder="+91-123-4534-678" [(ngModel)]="mobile"   required class="form-control">
+                            <p>{{mobile}}</p> 
+                        
+                            
+                        </div>
+
+
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">*Password</label>
+                          <input type="password" formControlName="password"   minlength="5" maxlength="20" placeholder="enter your password" [(ngModel)]="password"  required class="form-control">
+                          <p>{{password}}</p>
+                          
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">*Conform-Password</label>
+                            <input type="password" formControlName="conform_password" minlength="5" maxlength="20" placeholder="conform_password" [(ngModel)]="Conform_Password"  required class="form-control" >
+                            <p>{{Conform_Password}}</p>
+                            
+                        </div>
+                        <div class="submit">
+                            <input type="submit"  name="send" (click)="postData()" (click)="onCreateBlock()" class="btn btn-success mb-2">
+                            &nbsp;&nbsp;<a (click)="setData()" class="btn btn-primary">Set Value</a>
+                            &nbsp;&nbsp;<a (click)="resetData()" class="btn btn-info">Forgot</a>
+                            <div *ngIf="isValid; then thenblock else elseblock"></div>
+                            <ng-template #thenblock>
+                                successfully
+                            </ng-template>
+                            <ng-template #elseblock>
+                            invalid
+                            </ng-template>
+                        </div>
+                        
+                      
+                      <a style="color: beige; margin-top: 10px;" routerLink="/login">Already registered? click to login!!</a>
+                </form>
+            </div>
+        </div>
+     </div>
+    </div>
+    </div>
+</div>

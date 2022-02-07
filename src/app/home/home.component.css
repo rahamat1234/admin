@@ -1,0 +1,15 @@
+p{
+    font-family: lato;
+
+}
+.parent Box{
+    background: #fdfdff;
+    border: 1px solid #d99dd9;
+    border-radius: 5px;
+    width: 48%;
+
+}
+.parent Box h2{
+    color: greenyellow;
+    
+}

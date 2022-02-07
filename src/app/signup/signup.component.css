@@ -1,0 +1,39 @@
+.card{
+    border: none;
+    width: 500px;
+    padding: 10px;
+    left: 35%;
+    background-color: rgb(109, 109, 189); 
+}
+.card label h1,
+h5{
+    color: whitesmoke;
+
+}
+label{
+    color: rgb(27, 20, 20);
+}
+input.ng-touched.ng-invalid{
+    border: 2px solid rgb(228, 79, 79);
+}
+input.ng-touched.ng-valid{
+    border: 3px solid rgb(57, 179, 27);
+}
+.error{
+    color: red;
+}
+img{
+    width: 70px;
+    
+}
+.image img{
+    text-align: center;
+    display: block;
+}
+.login_section{
+    padding: 12PX;
+    margin: 20PX;
+    position: absolute;
+    top: 200px;
+    right: 200px;
+}
